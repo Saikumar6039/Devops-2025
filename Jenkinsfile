@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Clone') {
             steps {
-                git 'https://github.com/Saikumar6039/Devops-2025.git'
+                git branch: 'main', url: 'https://github.com/Saikumar6039/Devops-2025.git'
             }
         }
         stage('Build') {
